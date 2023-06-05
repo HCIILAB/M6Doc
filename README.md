@@ -5,3 +5,9 @@ Note: The M<sup>6</sup>Doc dataset can only be used for non-commercial research 
 
 ## License
 The M<sup>6</sup>Doc dataset should be used and distributed under the [Creative Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License](https://creativecommons.org/licenses/by-nc-nd/4.0/) for non-commercial research purposes.
+
+## Description
+The M<sup>6</sup>Doc dataset contains a total of 9,080 modern document images, which are categorized into seven subsets, \emph{i.e.}, scientific article (11\%), textbook (23\%), test paper (22\%), magazine (22\%), newspaper (11\%), note (5.5\%), and book (5.5\%) according to their content and layouts. It contains three formats: PDF (64\%), photographed documents (5\%), and scanned documents (31\%). The dataset includes a total of 237,116 annotated instances.
+
+## Examples of SCUT-CAB
+### Data source:
