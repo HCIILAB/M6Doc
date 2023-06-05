@@ -23,7 +23,7 @@ The M<sup>6</sup>Doc datasets were collected from various sources, including [ar
   * The note subset consists of students' handwritten notes in nine subjects, including 500 scanned pages.
   * The book subset contains 500 photographed images, which were acquired from 50 books with 10 pages each. Each book has a distinct layout, resulting in considerable diversity in this subset.
  
-For a fair evaluation, we divided the dataset into training, validation, and test sets in a ratio of 6:1:3. We also ensured that the different labels were in equal proportions in the three sets. Table \ref{tab2} summarizes the overall frequency and distribution of labels in different sets.
+For a fair evaluation, we divided the dataset into training, validation, and test sets in a ratio of 6:1:3. We also ensured that the different labels were in equal proportions in the three sets. Table 2. summarizes the overall frequency and distribution of labels in different sets.
 
 Table 2. M<sup>6</sup>Doc dataset overview.
 ![](img/m6doc_dataset_review.png)
