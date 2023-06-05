@@ -32,3 +32,40 @@ Table 2. M<sup>6</sup>Doc dataset overview.
 ### Label definition
 To ensure that the definition of document layout elements is reasonable and traceable, we reviewed relevant information, such as layout knowledge and layout design. We also used knowledge from the book \"Page Design: New Layout \& Editorial Design(2019)\" and referred to YouTube video explanations regarding [magazine](https://www.youtube.com/watch?v=7sSJtScnsjE) and [newspaper](https://www.youtube.com/watch?v=LcsOuGcaqZs) layouts. In most cases, we followed the [Wikipedia](https://www.wikipedia.org) definition. Consequently, we defined 74 detailed document annotation labels. The key factors in selecting these annotation labels include (1) the commonality of annotation labels between different document types, (2) the specificity of labels between different document types, (3) the frequency of labels, and (4) the recognition of independent pages. We first unified the labels between different documents to the maximum extent and then defined the labels for certain document types for differentials. Commonality and specificity ensure that the defined labels can adapt to multiple document types, which implies that a more detailed logical layout analysis for a certain type of document can be performed. It differs from how labels are defined in DocBank, PubLayNet, and DocLayNet, which all ignore defining specific labels for different document types.
 
+### Annotation guideline
+We provide a detailed annotation guideline (over 170 pages) and some typical annotation examples. 47 annotators performed the annotation task strictly according to the guidelines.
+
+## Directory Format
+The dataset is organized in the following directory format:
+```
+├── M6Doc
+    ├── annotations
+    │   ├── instances_train2017.json
+    │   │── instances_val2017.json
+    │   └── instances_test.json
+    ├── train2017
+    │   ├── xxx.jpg
+    │   └── ...
+    ├── val2017
+    │   ├── xxx.jpg
+    │   └── ...
+    └── test2017
+        ├── xxx.jpg
+        └── ...
+
+```
+
+## Citation and Contact
+Please consider to cite our paper when you use our dataset:
+```
+@InProceedings{Cheng_2023_CVPR,
+    author    = {Cheng, Hiuyi and Zhang, Peirong and Wu, Sihang and Zhang, Jiaxin and Zhu, Qiyuan and Xie, Zecheng and Li, Jing and Ding, Kai and Jin, Lianwen},
+    title     = {M6Doc: A Large-Scale Multi-Format, Multi-Type, Multi-Layout, Multi-Language, Multi-Annotation Category Dataset for Modern Document Layout Analysis},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {15138-15147}
+}
+```
+
+For any questions about the dataset, please contact the authors by sending an email to Prof. Jin([eelwjin@scut.edu.cn](mailto:eelwjin@scut.edu.cn), or [lianwen.jin@gmail.com](mailto:lianwen.jin@gmail.com)). 
