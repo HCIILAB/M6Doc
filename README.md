@@ -37,7 +37,7 @@ For a fair evaluation, we divided the dataset into training, validation, and tes
 ![](img/m6doc_dataset_review.png)
 
 ### Annotation guideline
-We provide a detailed annotation guideline([guideline_chinese](guideline/guideline_chinese.pdf) or [guideline_en](guideline/guideline_en)(**Update later**)) (over 170 pages) and some typical annotation examples. 47 annotators performed the annotation task strictly according to the guidelines.
+We provide a detailed annotation guideline([guideline_chinese](guideline/guideline_chinese.pdf) (over 170 pages) and some typical annotation examples. 47 annotators performed the annotation task strictly according to the guidelines.
 
 ## Directory Format
 The dataset is organized in the following directory format:
