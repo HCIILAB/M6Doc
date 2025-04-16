@@ -72,4 +72,8 @@ Please consider to cite our paper when you use our dataset:
 }
 ```
 
+While this work primarily focuses on modern documents, we are also conducting research on the layout analysis of Ancient Chinese Books. Please refer to the [GitHub link](https://github.com/HCIILAB/SCUT-CAB_Dataset_Release) and [guideline_Ancient](guideline/guideline_ancient.pdf) for more details.
+
 For any questions about the dataset, please contact the authors by sending an email to Prof. Jin([eelwjin@scut.edu.cn](mailto:eelwjin@scut.edu.cn), or [lianwen.jin@gmail.com](mailto:lianwen.jin@gmail.com)). 
+
+
