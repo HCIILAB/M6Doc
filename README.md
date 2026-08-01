@@ -3,13 +3,25 @@ The [M<sup>6</sup>Doc](https://openaccess.thecvf.com/content/CVPR2023/html/Cheng
 - [Baidu Cloud](https://pan.baidu.com/s/1O0k4zo6e_pnUebwEPXu0Fg?pwd=dlvc)(Size=3.75G)
 - [OneDrive](https://1drv.ms/u/s!AuZg70Qbn4fEiVGjzKiExS5P65rV?e=EOIxKe)
 
-Note: The M<sup>6</sup>Doc dataset can only be used for non-commercial research purposes. For scholars or organizations who want to use the M<sup>6</sup>Doc database, please first fill in this [Application Form](Application_Form/Application-Form-for-Using-M6Doc.docx) and send it via email to us ([lianwen.jin@gmail.com](mailto:lianwen.jin@gmail.com) or [eelwjin@scut.edu.cn](mailto:eelwjin@scut.edu.cn)). When submitting the application form to us, please list or attach 1-2 of your publications in the recent 6 years to indicate that you (or your team) do research in the related research fields of OCR, handwriting analysis and recognition, document image processing, or visual information extraction. At present, this dataset is only freely available to scholars in the above-mentioned fields. **We will give you the download links and decompression passwords for the training dataset and validation dataset after your letter has been received and approved**.
+The M<sup>6</sup>Doc dataset can only be used for **non-commercial research purpose**. Trainging set and testing set are available now, but the training set is encrypted with additional code. To request access, please follow these steps:
 
-To ensure your application is processed as quickly as possible, we recommend that you pay attention to the following points when sending your email, as this can help increase the success rate of your application:
-1. **Application Information**: Ensure it is complete, accurate, and meets all requirements.
-2. **Email Content Format**: Use a formal email format, including an appropriate salutation, body, and signature. Avoid overly casual language, which could lead to your email being blocked.
-3. **Email Blocking**: Try using a different email address or adding the recipient's email address to your contacts.
-Thank you!
+**Step 1: Download and complete the agreement document:**
+
+- [Application Form for Using M<sup>6</sup>Doc](Application_Form/Application-Form-for-Using-M6Doc.docx)
+
+Have this document signed and stamped by your institution. Please also prepare 1–2 recent publications (within the last 6 years) as evidence that you or your team conduct research in OCR, handwriting analysis and recognition, document image processing, or visual information extraction.
+
+**Step 2: Submit your application online:**
+
+> 🔗 **[SCUT DLVC Lab Dataset Access Portal → Apply for M<sup>6</sup>Doc](http://121.41.49.212:9000/apply/m6doc)**
+
+Upload both signed documents through the portal and fill out the "Recent Publications" block. Your application will be reviewed manually and you will be notified by email once a decision has been made (typically within 1–5 business days).
+
+**Step 3: Download the dataset:**
+
+After approval, you will receive the download link and decompression password via email.
+
+> ⚠️ All users must comply with the use conditions at all times; failure to do so will result in revocation of access.
 
 ## License
 The M<sup>6</sup>Doc dataset should be used and distributed under the [Creative Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0) License](https://creativecommons.org/licenses/by-nc-nd/4.0/) for non-commercial research purposes.
