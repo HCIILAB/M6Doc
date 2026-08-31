@@ -1,6 +1,6 @@
 # M<sup>6</sup>Doc_Dataset_Release
 The [M<sup>6</sup>Doc](https://openaccess.thecvf.com/content/CVPR2023/html/Cheng_M6Doc_A_Large-Scale_Multi-Format_Multi-Type_Multi-Layout_Multi-Language_Multi-Annotation_Category_Dataset_CVPR_2023_paper.html) dataset for the research of document layout analysis in Modern Document is now released by the Deep Learning and Visual Computing Lab of South China University of Technology. The dataset can be downloaded through the following link:
-- [Baidu Cloud](https://pan.baidu.com/s/1O0k4zo6e_pnUebwEPXu0Fg?pwd=dlvc](https://pan.baidu.com/s/1jV9WTE9yVZfwWF_x1JZE9Q?pwd=xx3k)(Size=12.45G, need decompression password)
+- [Baidu Cloud](https://pan.baidu.com/s/1jV9WTE9yVZfwWF_x1JZE9Q?pwd=xx3k)(Size=12.45G, need decompression password)
 - [OneDrive](https://1drv.ms/u/s!AuZg70Qbn4fEiVGjzKiExS5P65rV?e=EOIxKe)
 
 The M<sup>6</sup>Doc dataset can only be used for **non-commercial research purpose**. Trainging set and testing set are available now, but the training set is encrypted with additional code. To request access, please follow these steps:
