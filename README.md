@@ -48,7 +48,6 @@ huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc.zip --local-dir .
 The M<sup>6</sup>Doc dataset can **only be used for non-commercial research purposes**. The dataset is publicly accessible but **encrypted with an additional password**. To request access, please follow these steps:
 
 ### Step 1: Download and complete the agreement document:
-- 📄 [Application Form for Using M<sup>6</sup>Doc (Direct Download)](Application_Form/Application-Form-for-Using-M6Doc.docx)
 - 📁 [Application_Form Directory](Application_Form/)
 
 Have this document **signed and stamped** by your institution. Please also prepare **1–2 recent publications (within the last 6 years)** as evidence that you or your team conduct research in OCR, handwriting analysis and recognition, document image processing, or visual information extraction.
