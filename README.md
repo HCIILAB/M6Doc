@@ -2,7 +2,7 @@
 
 <p align="center">
     <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Cheng_M6Doc_A_Large-Scale_Multi-Format_Multi-Type_Multi-Layout_Multi-Language_Multi-Annotation_Category_Dataset_CVPR_2023_paper.pdf"><img src="https://img.shields.io/badge/Paper-PDF-orange.svg" alt="PDF"></a>
-    <a href="https://huggingface.co/datasets"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-yellow.svg" alt="Hugging Face"></a>
+    <a href="https://huggingface.co/datasets/hiuyi/M6Doc"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-hiuyi%2FM6Doc-yellow.svg" alt="Hugging Face"></a>
     <a href="README_zh.md"><img src="https://img.shields.io/badge/语言-中文版-blue.svg" alt="Chinese Version"></a>
 </p>
 
@@ -12,10 +12,34 @@ The [M<sup>6</sup>Doc](https://openaccess.thecvf.com/content/CVPR2023/html/Cheng
 
 ## Dataset Download
 
-| Platform | Link | Details / Size | Password Required |
+| Platform | Download Link | Format / Size | Password Required |
 | :--- | :--- | :--- | :---: |
-| **Hugging Face** | [🤗 Dataset Repository Files](https://huggingface.co/datasets) | Full dataset archives | **Yes** (encrypted archive) |
+| **Hugging Face** | [🤗 hiuyi/M6Doc Repository](https://huggingface.co/datasets/hiuyi/M6Doc) | `M6Doc.zip` | **Yes** (encrypted archive) |
 | **Baidu Cloud** | [Download via BaiduNetdisk](https://pan.baidu.com/s/1jV9WTE9yVZfwWF_x1JZE9Q?pwd=xx3k) | 12.45 GB (Extract Code: `xx3k`) | **Yes** (decompression password) |
+
+### How to Download from Hugging Face
+
+You can download `M6Doc.zip` using any of the following methods:
+
+**Method 1: Direct Web Download**
+- Go directly to the repository file list: [hiuyi/M6Doc / Files and versions](https://huggingface.co/datasets/hiuyi/M6Doc/tree/main) and click download on `M6Doc.zip`.
+
+**Method 2: Using Python (`huggingface_hub`)**
+```python
+from huggingface_hub import hf_hub_download
+
+hf_hub_download(
+    repo_id="hiuyi/M6Doc",
+    filename="M6Doc.zip",
+    repo_type="dataset",
+    local_dir="./"
+)
+```
+
+**Method 3: Using Hugging Face CLI**
+```bash
+huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc.zip --local-dir ./
+```
 
 ---
 
@@ -86,7 +110,7 @@ We provide a detailed annotation guideline ([guideline_chinese.pdf](guideline/gu
 ---
 
 ## Directory Format
-The dataset is organized in the following directory format:
+Once `M6Doc.zip` is decompressed, the dataset is organized in the following format:
 
 ```text
 ├── M6Doc
