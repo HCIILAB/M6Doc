@@ -12,22 +12,34 @@ The [M<sup>6</sup>Doc](https://openaccess.thecvf.com/content/CVPR2023/html/Cheng
 
 ## Dataset Download
 
-| Platform | Download Link | Format / Size | Password Required |
-| :--- | :--- | :--- | :---: |
-| **Hugging Face** | [🤗 hiuyi/M6Doc Repository](https://huggingface.co/datasets/hiuyi/M6Doc) | `M6Doc.zip` | **Yes** (encrypted archive) |
-| **Baidu Cloud** | [Download via BaiduNetdisk](https://pan.baidu.com/s/1jV9WTE9yVZfwWF_x1JZE9Q?pwd=xx3k) | 12.45 GB (Extract Code: `xx3k`) | **Yes** (decompression password) |
+> 💡 **Notice:** Our **test data is completely free and openly accessible**! You can directly download `M6Doc_test.zip` without any application or password required.
+
+| Dataset Split | Platform | Download Link | Format / Size | Password Required / Status |
+| :--- | :--- | :--- | :--- | :---: |
+| **Full Dataset** | **Hugging Face** | [🤗 hiuyi/M6Doc Repository](https://huggingface.co/datasets/hiuyi/M6Doc) | `M6Doc.zip` | **Yes** (encrypted archive) |
+| **Full Dataset** | **Baidu Cloud** | [Download via BaiduNetdisk](https://pan.baidu.com/s/1jV9WTE9yVZfwWF_x1JZE9Q?pwd=xx3k) | 12.45 GB (Extract Code: `xx3k`) | **Yes** (decompression password) |
+| **Test Data** | **Hugging Face** | [🤗 Download M6Doc_test.zip](https://huggingface.co/datasets/hiuyi/M6Doc/tree/main) | `M6Doc_test.zip` | **No Password** |
 
 ### How to Download from Hugging Face
 
-You can download `M6Doc.zip` using any of the following methods:
+You can download `M6Doc.zip` or the free `M6Doc_test.zip` using any of the following methods:
 
 **Method 1: Direct Web Download**
-- Go directly to the repository file list: [hiuyi/M6Doc / Files and versions](https://huggingface.co/datasets/hiuyi/M6Doc/tree/main) and click download on `M6Doc.zip`.
+- Go directly to the repository file list: [hiuyi/M6Doc / Files and versions](https://huggingface.co/datasets/hiuyi/M6Doc/tree/main) and click download on `M6Doc.zip` or `M6Doc_test.zip`.
 
 **Method 2: Using Python (`huggingface_hub`)**
 ```python
 from huggingface_hub import hf_hub_download
 
+# Download Test Data (Free & Open Access)
+hf_hub_download(
+    repo_id="hiuyi/M6Doc",
+    filename="M6Doc_test.zip",
+    repo_type="dataset",
+    local_dir="./"
+)
+
+# Download Full Dataset (Password Required)
 hf_hub_download(
     repo_id="hiuyi/M6Doc",
     filename="M6Doc.zip",
@@ -38,6 +50,10 @@ hf_hub_download(
 
 **Method 3: Using Hugging Face CLI**
 ```bash
+# Download Test Data directly
+huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc_test.zip --local-dir ./
+
+# Download Full Dataset
 huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc.zip --local-dir ./
 ```
 
@@ -45,7 +61,7 @@ huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc.zip --local-dir .
 
 ## ⚠️ Access Request & Application Instructions
 
-The M<sup>6</sup>Doc dataset can **only be used for non-commercial research purposes**. The dataset is publicly accessible but **encrypted with an additional password**. To request access, please follow these steps:
+The full M<sup>6</sup>Doc dataset can **only be used for non-commercial research purposes**. The dataset is publicly accessible but **encrypted with an additional password** (except for the test data, which is completely free). To request access for the full dataset, please follow these steps:
 
 ### Step 1: Download and complete the agreement document:
 - 📁 [Application_Form Directory](Application_Form/)
