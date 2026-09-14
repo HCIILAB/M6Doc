@@ -12,22 +12,34 @@
 
 ## 数据集下载
 
-| 托管平台 | 下载链接 | 文件名称与大小 | 是否需要解压密码 |
-| :--- | :--- | :--- | :---: |
-| **Hugging Face** | [🤗 hiuyi/M6Doc 仓库入口](https://huggingface.co/datasets/hiuyi/M6Doc) | `M6Doc.zip` | **是**（加密归档） |
-| **百度网盘** | [点击跳转百度网盘下载](https://pan.baidu.com/s/1jV9WTE9yVZfwWF_x1JZE9Q?pwd=xx3k) | 12.45 GB（提取码：`xx3k`） | **是**（加密归档） |
+> 💡 **特别说明：我们的 test 数据是免费开放的！** 您可以直接通过下方链接下载测试集 `M6Doc_test.zip`，无需任何申请流程与解压密码。
+
+| 数据划分 | 托管平台 | 下载链接 | 文件名称与大小 | 是否需要解压密码 / 状态 |
+| :--- | :--- | :--- | :--- | :---: |
+| **全量数据集** | **Hugging Face** | [🤗 hiuyi/M6Doc 仓库入口](https://huggingface.co/datasets/hiuyi/M6Doc) | `M6Doc.zip` | **是**（加密归档） |
+| **全量数据集** | **百度网盘** | [点击跳转百度网盘下载](https://pan.baidu.com/s/1jV9WTE9yVZfwWF_x1JZE9Q?pwd=xx3k) | 12.45 GB（提取码：`xx3k`） | **是**（加密归档） |
+| **测试集 (Test)** | **Hugging Face** | [🤗 下载 M6Doc_test.zip](https://huggingface.co/datasets/hiuyi/M6Doc/tree/main) | `M6Doc_test.zip` | **免费开放（无需密码）** |
 
 ### 从 Hugging Face 下载数据的方式
 
-您可以通过以下任意一种方式下载 `M6Doc.zip`：
+您可以通过以下任意一种方式下载 `M6Doc.zip` 或免费的 `M6Doc_test.zip`：
 
 **方式一：网页端直接下载**
-- 访问仓库文件列表页面：[hiuyi/M6Doc / Files and versions](https://huggingface.co/datasets/hiuyi/M6Doc/tree/main)，找到 `M6Doc.zip` 并点击下载按钮。
+- 访问仓库文件列表页面：[hiuyi/M6Doc / Files and versions](https://huggingface.co/datasets/hiuyi/M6Doc/tree/main)，找到 `M6Doc.zip` 或 `M6Doc_test.zip` 并点击下载按钮。
 
 **方式二：通过 Python 脚本下载 (`huggingface_hub`)**
 ```python
 from huggingface_hub import hf_hub_download
 
+# 下载免费开放的 Test 测试集
+hf_hub_download(
+    repo_id="hiuyi/M6Doc",
+    filename="M6Doc_test.zip",
+    repo_type="dataset",
+    local_dir="./"
+)
+
+# 下载全量数据集（需要申请解压密码）
 hf_hub_download(
     repo_id="hiuyi/M6Doc",
     filename="M6Doc.zip",
@@ -38,6 +50,10 @@ hf_hub_download(
 
 **方式三：通过 Hugging Face 命令行（CLI）**
 ```bash
+# 直接下载免费开放的 Test 测试集
+huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc_test.zip --local-dir ./
+
+# 下载全量数据集
 huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc.zip --local-dir ./
 ```
 
@@ -45,7 +61,7 @@ huggingface-cli download --repo-type dataset hiuyi/M6Doc M6Doc.zip --local-dir .
 
 ## ⚠️ 访问权限与申请流程
 
-M<sup>6</sup>Doc 数据集**仅限用于非商业学术研究目的**。数据现已公开下载，但**压缩包使用提取码加密保护**。申请解压密码的具体步骤如下：
+M<sup>6</sup>Doc 全量数据集**仅限用于非商业学术研究目的**。数据现已公开下载，但**全量压缩包使用提取码加密保护**（Test 测试集除外，完全免费开放直接使用）。申请全量数据集解压密码的具体步骤如下：
 
 ### 第一步：下载并填写协议文档
 - 📄 [M<sup>6</sup>Doc 使用申请表（直接下载 Word 文档）](Application_Form/Application-Form-for-Using-M6Doc.docx)
